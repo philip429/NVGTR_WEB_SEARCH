@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 90%;
+  background-image: url(imgs/NVGTR_FONDO.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.nav-section {
+  width: 300px;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-section a{
+  margin-right: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#nav-icono_ajustes{
+  background-image: url(imgs/NVGTR_ANCLA.png);
+}
+
+#nav-icono_photo{
+  background-image: url(imgs/NVGTR_LOGIN_ICON.png);
+}
+
+.nav-icono{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
+}
+
+.Buscador {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Buscadox-texto {
+  width: 55%;
+  height: 20%;
+  background-image: url(imgs/NVGTR_FONDO_TEXT-removebg.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Buscador-Contenedor{
+  width: 10%;
+  border-radius: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: width 2s, background 1s;;
+}
+
+
+.Buscador-Contenedor:hover{
+  box-shadow: 0 1PX 6px 0 #20212447;
+  width: 100%;
+}
+
+.Buscador-Contenedor span, a {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.Buscador-Contenedor_Brujula{
+  background-image: url(imgs/NVGTR_BUSCADOR_BRUJULA.png);
+} 
+
+.Buscador-Contenedor input{
+  width: 85%;
+  height: 40px;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+.Buscador-Contenedor:hover input{
+display: inline;
+}
+
+
+.Buscador-Contenedor_Microfono{
+  background-image: url(imgs/NVGTR_BUSCADOR_MICROFONO.png);
+
+}
+
+.Buscador-Contenedor_Maquina_Escribir{
+  background-image: url(imgs/NVGTR_BUSCADOR_MAQUINAE.png);
+}
+
+.Buscador-Botones{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Buscador-Botones div{
+  width: 40%;
+}
+
+button{
+  height: 35px;
+  width: 100%;
+  background-color: rgba(131, 128, 118, 0.667);
+  border: 0;
+  font-size: 1.8rem;
+  color: black;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+button:hover{
+  border: 1px solid rgb(131, 128, 118);;
+  box-shadow: 0 2px 2px #20212447;
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  background: rgb(235,227,201);
+  background: linear-gradient(90deg, rgba(235,227,201,1) 0%, rgba(175,173,173,1) 63%, rgba(212,211,211,1) 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  font-size: 2rem;
+}
+
+footer ul {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.footer-izquierda {
+  justify-self: left;
+}
+
+.footer-derecha {
+  justify-self: right;
+}
+
+footer a{
+  text-decoration: none;
+  margin: 10px;
+  color: rgb(75, 73, 68);;
+}
+
+/*Media Querys*/
+@media (max-width: 1700px){
+  .Buscadox-texto {
+    width: 60%;
+    height: 15%;
+    background-image: url(imgs/NVGTR_FONDO_TEXT-removebg_Tablet.png);
+  }
+
+  .Buscador-Contenedor input{
+    height: 20px;
+  }
+
+}
+
+@media (max-width: 1200px){
+  .Buscadox-texto {
+    width: 75%;
+    height: 15%;
+    background-image: url(imgs/NVGTR_FONDO_TEXT-removebg_Mobile.png);
+  }
+
+  button{
+    font-size: 1.5rem;
+  }
+
+  footer{
+    font-size: 1.5rem;
+  }
+
+
+
+}
+
+@media (max-width: 600px){
+  .Buscadox-texto {
+    width: 75%;
+    height: 15%;
+    background-image: url(imgs/NVGTR_FONDO_TEXT-removebg_Mobile.png);
+  }
+
+  button{
+    font-size: 1.2rem;
+  }
+
+  footer{
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 550px){
+  .Buscadox-texto {
+    width: 90%;
+    height: 8%;
+    background-image: url(imgs/NVGTR_FONDO_TEXT-removebg_Tablet.png);
+  }
+
+  .Buscador-Contenedor span, a {
+    width: 16px;
+    height: 16px;
+  }
+
+  .Buscador-Contenedor input{
+    height: 14px;
+  }
+
+  button{
+    font-size: 0.8rem;
+  }
+
+  footer{
+    font-size: 0.8rem;
+  }
+
+}
+
